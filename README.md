@@ -10,6 +10,6 @@ Java JDK-1.8 or higher
 Apache Maven 3 or higher
 
 Steps to Run :
-1) Clone this repo into your local.
+1) Clone this repo into your local. command to use  **git clone https://github.com/jayveerss/API_Automation_Framework.git**
 2) Go to the same location where this repo cloned.
 3) Run **mvn clean install** command
