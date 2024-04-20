@@ -11,5 +11,5 @@ and begin with developing the test cases straight away.
 
 **Steps to Run :**
 1) Clone this repo into your local. command to use  **git clone https://github.com/jayveerss/API_Automation_Framework.git**
-2) Go to the same location where this repo cloned.
+2) You can open and run this project in IDE or Go to the same location where this repo cloned.
 3) Run **mvn clean install** command
