@@ -1,6 +1,8 @@
 package org.module;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
 import org.module.enums.Result;
 import org.module.model.pojo.Root;
@@ -18,6 +20,7 @@ import static org.module.constants.FrameworkConstants.*;
 public class USDRatesTest extends BaseTest {
 
     @Test (testName="USD exchange rate test")
+    @Severity(SeverityLevel.CRITICAL)
     public void USD_Rate_Test(){
         Response response =  getCurrencyRates("/v6/latest/USD");
         Root root = response.as(Root.class);

@@ -1,5 +1,7 @@
 package org.module;
 
+import io.qameta.allure.Severity;
+import io.qameta.allure.SeverityLevel;
 import io.restassured.response.Response;
 import org.module.enums.Result;
 import org.module.model.pojo.Root;
@@ -13,6 +15,7 @@ import org.testng.annotations.Test;
 public class NegativeTest extends BaseTest{
 
     @Test (testName="Invalid currency test")
+    @Severity(SeverityLevel.MINOR)
     public void Invalid_Currency_Test() {
         Response response = getCurrencyRates("/v6/latest/xyz");
         Root root = response.as(Root.class);
